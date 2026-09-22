@@ -1,0 +1,9 @@
+selenium
+scapy
+pyshark
+scikit-learn
+matplotlib
+seaborn
+tqdm
+pandas
+numpy

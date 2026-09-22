@@ -1,0 +1,15 @@
+sudo apt update
+sudo apt install -y firefox tshark python3-pip
+
+# Let tshark capture packets without running as root
+sudo usermod -aG wireshark $USER
+sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+# then log out and back in for the group change to take effect
+
+pip3 install selenium scapy pandas
+
+# geckodriver (Selenium's Firefox driver) — check for the latest version at
+# github.com/mozilla/geckodriver/releases
+wget https://github.com/mozilla/geckodriver/releases/latest/download/geckodriver-v0.35.0-linux64.tar.gz
+tar -xzf geckodriver-v0.35.0-linux64.tar.gz
+sudo mv geckodriver /usr/local/bin/

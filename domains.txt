@@ -1,0 +1,11 @@
+indiatimes.com
+amazon.in
+flipkart.com
+moneycontrol.com
+indiamart.com
+google.com
+cloudflare.com
+facebook.com
+gstatic.com
+googleapis.com
+microsoft.com
